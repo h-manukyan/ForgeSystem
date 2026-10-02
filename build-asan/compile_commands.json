@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/haan/forge/build-asan",
+  "command": "/usr/bin/c++ -I/home/haan/forge/build-asan/_deps/googletest-src/googlemock/include -I/home/haan/forge/build-asan/_deps/googletest-src/googlemock -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest/include -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fsanitize=address,undefined -fno-omit-frame-pointer -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/haan/forge/build-asan/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/haan/forge/build-asan/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "/home/haan/forge/build-asan/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/haan/forge/build-asan",
+  "command": "/usr/bin/c++ -isystem /home/haan/forge/build-asan/_deps/googletest-src/googlemock/include -isystem /home/haan/forge/build-asan/_deps/googletest-src/googlemock -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest/include -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fsanitize=address,undefined -fno-omit-frame-pointer -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/haan/forge/build-asan/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/haan/forge/build-asan/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "/home/haan/forge/build-asan/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/haan/forge/build-asan",
+  "command": "/usr/bin/c++ -I/home/haan/forge/build-asan/_deps/googletest-src/googletest/include -I/home/haan/forge/build-asan/_deps/googletest-src/googletest -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fsanitize=address,undefined -fno-omit-frame-pointer -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/haan/forge/build-asan/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/haan/forge/build-asan/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "/home/haan/forge/build-asan/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/haan/forge/build-asan",
+  "command": "/usr/bin/c++ -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest/include -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fsanitize=address,undefined -fno-omit-frame-pointer -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/haan/forge/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/haan/forge/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "/home/haan/forge/build-asan/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/home/haan/forge/build-asan",
+  "command": "/usr/bin/c++ -I/home/haan/forge/libraries/forge-core/include -std=c++23 -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra -Wpedantic -o libraries/forge-core/CMakeFiles/forge_core.dir/src/version.cpp.o -c /home/haan/forge/libraries/forge-core/src/version.cpp",
+  "file": "/home/haan/forge/libraries/forge-core/src/version.cpp",
+  "output": "/home/haan/forge/build-asan/libraries/forge-core/CMakeFiles/forge_core.dir/src/version.cpp.o"
+},
+{
+  "directory": "/home/haan/forge/build-asan",
+  "command": "/usr/bin/c++ -I/home/haan/forge/libraries/forge-core/include -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest/include -isystem /home/haan/forge/build-asan/_deps/googletest-src/googletest -std=c++23 -fsanitize=address,undefined -fno-omit-frame-pointer -o libraries/forge-core/CMakeFiles/forge_core_tests.dir/tests/version_test.cpp.o -c /home/haan/forge/libraries/forge-core/tests/version_test.cpp",
+  "file": "/home/haan/forge/libraries/forge-core/tests/version_test.cpp",
+  "output": "/home/haan/forge/build-asan/libraries/forge-core/CMakeFiles/forge_core_tests.dir/tests/version_test.cpp.o"
+}
+]

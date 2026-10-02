@@ -1,0 +1,5 @@
+if(EXISTS "/home/haan/forge/build-asan/libraries/forge-core/forge_core_tests[1]_tests.cmake")
+  include("/home/haan/forge/build-asan/libraries/forge-core/forge_core_tests[1]_tests.cmake")
+else()
+  add_test(forge_core_tests_NOT_BUILT forge_core_tests_NOT_BUILT)
+endif()

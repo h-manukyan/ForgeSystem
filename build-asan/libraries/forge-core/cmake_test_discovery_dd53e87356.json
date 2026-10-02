@@ -1,0 +1,22 @@
+{
+  "tests": 2,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "Version",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "IsNotEmpty",
+          "file": "\/home\/haan\/forge\/libraries\/forge-core\/tests\/version_test.cpp",
+          "line": 4
+        },
+        {
+          "name": "MatchesCurrentRelease",
+          "file": "\/home\/haan\/forge\/libraries\/forge-core\/tests\/version_test.cpp",
+          "line": 8
+        }
+      ]
+    }
+  ]
+}
