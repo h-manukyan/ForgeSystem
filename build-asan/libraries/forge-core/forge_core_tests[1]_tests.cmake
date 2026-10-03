@@ -1,5 +1,0 @@
-add_test([=[Version.IsNotEmpty]=]  /home/haan/forge/build-asan/libraries/forge-core/forge_core_tests [==[--gtest_filter=Version.IsNotEmpty]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[Version.IsNotEmpty]=]  PROPERTIES DEF_SOURCE_LINE /home/haan/forge/libraries/forge-core/tests/version_test.cpp:4 WORKING_DIRECTORY /home/haan/forge/build-asan/libraries/forge-core SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[Version.MatchesCurrentRelease]=]  /home/haan/forge/build-asan/libraries/forge-core/forge_core_tests [==[--gtest_filter=Version.MatchesCurrentRelease]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[Version.MatchesCurrentRelease]=]  PROPERTIES DEF_SOURCE_LINE /home/haan/forge/libraries/forge-core/tests/version_test.cpp:8 WORKING_DIRECTORY /home/haan/forge/build-asan/libraries/forge-core SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  forge_core_tests_TESTS Version.IsNotEmpty Version.MatchesCurrentRelease)
