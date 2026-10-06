@@ -1,0 +1,2 @@
+/usr/bin/ar qc libforge-core.a "CMakeFiles/forge-core.dir/src/Forge.cpp.o" "CMakeFiles/forge-core.dir/src/Resource.cpp.o"
+/usr/bin/ranlib libforge-core.a

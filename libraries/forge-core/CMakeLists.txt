@@ -1,5 +1,6 @@
 add_library(forge-core
-        src/Forge.cpp
+    src/Forge.cpp
+    src/Resource.cpp
 )
 
 target_include_directories(forge-core

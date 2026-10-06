@@ -1,0 +1,2 @@
+# Empty dependencies file for forge-core.
+# This may be replaced when dependencies are built.

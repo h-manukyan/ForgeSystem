@@ -1,10 +1,8 @@
-#include "forge/core/Forge.h"
+#include "forge/core/Resource.h"
 
 int main()
 {
-    forge::Forge forge;
-
-    forge.start();
+    forge::Resource resource();
 
     return 0;
 }
