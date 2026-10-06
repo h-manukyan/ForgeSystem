@@ -1,13 +1,19 @@
 #include "forge/core/Forge.h"
-
 #include <iostream>
 
-using namespace std;
+namespace forge {
 
-namespace forge
-{
-    void Forge::start()
+    Forge::Forge(std::string nameInput, int resInt)
+        : name(nameInput), resource(resInt)
     {
-        cout << "ForgeCore started!" << endl;
+        std::cout << "Forge constructed: " << name << std::endl;
     }
+
+    Forge::~Forge()
+    {
+        std::cout << "Forge destroyed: " << name << std::endl;
+    }
+
+    void Forge::SetResourceValue(int valueRes){resource.SetValue(valueRes);}
+    int Forge::GetResourceValue() const {return resource.GetValue();}
 }

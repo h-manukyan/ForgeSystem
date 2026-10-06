@@ -1,10 +1,21 @@
 #pragma once
 
-namespace forge
-{
-    class Forge
-    {
+#include <string>
+#include "Resource.h"
+
+namespace forge {
+
+    class Forge {
+    private:
+        std::string name;
+        Resource resource;
+
     public:
-        void start();
+        Forge(std::string nameInput, int resInt);
+        ~Forge();
+
+        void SetResourceValue(int valueRes);
+        int GetResourceValue() const;
     };
+
 }

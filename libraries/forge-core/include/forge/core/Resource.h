@@ -7,10 +7,10 @@ namespace forge
             int value;
 
         public:
-            Resource();
+            Resource(int initialValue);
             ~Resource();
 
-            void SetValue(int x){value = x}
-            int GetValue(){return value}
+            void SetValue(int x);
+            int GetValue() const;
     };
 }
