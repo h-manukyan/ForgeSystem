@@ -2,15 +2,26 @@
 
 namespace forge
 {
-    class Resource {
-        private:
-            int value;
+    enum class ConsumeResult
+    {
+        Success,
+        InvalidAmount,
+        InsufficientResource
+    };
 
-        public:
-            Resource(int initialValue);
-            ~Resource();
+    class Resource
+    {
+    private:
+        int value;
 
-            void SetValue(int x);
-            int GetValue() const;
+    public:
+        Resource(int initialValue);
+        ~Resource();
+
+        void SetValue(int x);
+        int GetValue() const;
+
+        void Add(int amount);
+        ConsumeResult Consume(int amount);
     };
 }

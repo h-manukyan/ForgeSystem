@@ -4,19 +4,23 @@
 
 namespace forge
 {
-    Resource::Resource(int resInt) : value(resInt >= 0 ? resInt : 0)
+    Resource::Resource(int initialValue) : value(initialValue >= 0 ? initialValue : 0) {std::cout << "Resource acquired\n";}
+
+    Resource::~Resource() {std::cout << "Resource released\n";}
+
+    void Resource::SetValue(int x){if (x >= 0){value = x;}}
+    int Resource::GetValue() const{return value;}
+
+    void Resource::Add(int amount){if (amount >= 0){value += amount;}}
+    ConsumeResult Resource::Consume(int amount)
     {
-        std::cout << "Resource acquired\n";
-    }
+        if (amount < 0)
+            return ConsumeResult::InvalidAmount;
 
-    Resource::~Resource()
-    {
-        std::cout << "Resource released\n";
-    }
+        if (amount > value)
+            return ConsumeResult::InsufficientResource;
 
-    void Resource::SetValue(int x) {
-        if (x >= 0) {value = x;}
+        value -= amount;
+        return ConsumeResult::Success;
     }
-
-    int Resource::GetValue() const {return value;}
 }

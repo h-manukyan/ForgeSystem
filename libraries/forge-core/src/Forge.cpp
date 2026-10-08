@@ -1,19 +1,19 @@
 #include "forge/core/Forge.h"
+
 #include <iostream>
 
-namespace forge {
+namespace forge
+{
+    Forge::Forge(const std::string& input, int initialValue) : name(input), resource(initialValue) {std::cout << "Forge constructed: " << name << "\n";}
+    Forge::~Forge(){std::cout << "Forge destroyed: " << name << "\n";}
+    Forge::Forge(const Forge& other):name(other.name), resource(other.resource){}
 
-    Forge::Forge(std::string nameInput, int resInt)
-        : name(nameInput), resource(resInt)
-    {
-        std::cout << "Forge constructed: " << name << std::endl;
-    }
 
-    Forge::~Forge()
-    {
-        std::cout << "Forge destroyed: " << name << std::endl;
-    }
+    void Forge::SetResourceValue(int value){resource.SetValue(value);}
+    int Forge::GetResourceValue() const{return resource.GetValue();}
+    void Forge::AddResource(int amount){resource.Add(amount);}
+    ConsumeResult Forge::ConsumeResource(int amount) {return resource.Consume(amount);}
 
-    void Forge::SetResourceValue(int valueRes){resource.SetValue(valueRes);}
-    int Forge::GetResourceValue() const {return resource.GetValue();}
+    const std::string& Forge::GetName() const {return this->name;}
+    void Forge::SetName(const std::string& newName){ if (!newName.empty()){this->name = newName;}}
 }
