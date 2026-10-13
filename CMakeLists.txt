@@ -19,3 +19,9 @@ target_link_libraries(forge
         PRIVATE
         forge-core
 )
+
+include(CTest)
+
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
