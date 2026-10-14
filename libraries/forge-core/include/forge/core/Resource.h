@@ -21,7 +21,7 @@ namespace forge
         void SetValue(int x);
         int GetValue() const;
 
-        void Add(int amount);
+        ConsumeResult Add(int amount);
         ConsumeResult Consume(int amount);
     };
 }
