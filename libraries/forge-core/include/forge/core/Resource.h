@@ -6,7 +6,8 @@ namespace forge
     {
         Success,
         InvalidAmount,
-        InsufficientResource
+        InsufficientResource,
+        Overflow
     };
 
     class Resource

@@ -1,5 +1,6 @@
 #include "forge/core/Resource.h"
 #include <iostream>
+#include <climits>
 
 namespace forge
 {
@@ -12,6 +13,7 @@ namespace forge
     ConsumeResult Resource::Add(int amount)
     {
         if (amount < 0) {return ConsumeResult::InvalidAmount;}
+        if (amount > INT_MAX - value) {return ConsumeResult::Overflow;}
 
         value += amount;
         return ConsumeResult::Success;
